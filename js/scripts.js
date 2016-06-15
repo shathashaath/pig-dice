@@ -1,19 +1,22 @@
 // Business End Logic
 function Player () {
   this.totalScore = 0;
-  this.turnScore = 0;
 }
 
 Player.prototype.rollDice = function () {
-  var diceRoll = document.getElementById("die1"); //getting the id to write into box
   var diceOutput = Math.floor(Math.random() * 6) + 1;
-  diceRoll.innerHTML = diceOutput;
+  var diceBox = document.getElementById("dieBox"); //getting the id to write into box
+  diceBox.innerHTML = diceOutput;
   if (diceOutput === 1) {
     alert("You lost this turn, switch players!");
     this.turnScore = 0;
   } else {
     this.turnScore += diceOutput;
   }
+}
+
+Player.prototype.hold = function () {
+  this.totalScore += this.turnScore;
 }
 
 
@@ -30,6 +33,9 @@ $(document).ready(function() {
   });
   $("#p1-hold").click(function(event) {
     event.preventDefault();
+    newPlayer1.hold();
+    $("#p1-score").text(newPlayer1.totalScore);
+    $("#p1-turnscore").hide();
   });
   $("#p2-roll").click(function(event) {
     event.preventDefault();
