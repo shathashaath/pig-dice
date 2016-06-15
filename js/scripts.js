@@ -1,6 +1,7 @@
 // Business End Logic
 function Player () {
   this.totalScore = 0;
+  this.turnScore = 0;
 }
 
 Player.prototype.rollDice = function () {
@@ -10,6 +11,7 @@ Player.prototype.rollDice = function () {
   if (diceOutput === 1) {
     alert("You lost this turn, switch players!");
     this.turnScore = 0;
+    diceBox.innerHTML = 0;
   } else {
     this.turnScore += diceOutput;
   }
