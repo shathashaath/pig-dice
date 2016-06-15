@@ -19,6 +19,7 @@ Player.prototype.rollDice = function () {
 
 Player.prototype.hold = function () {
   this.totalScore += this.turnScore;
+  // diceBox.innerHTML = 0;
 }
 
 
