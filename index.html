@@ -7,6 +7,7 @@
     <script src="js/scripts.js"></script>
     <title>Pig Dice</title>
   </head>
+
   <body>
     <h1>Pig Dice!</h1>
     <div class="row container">
@@ -14,18 +15,18 @@
         <h2>Player 1 </h2>
         <h3>Total Score: <span id="p1-score"></span></h3>
         <h3>Turn Score: <span id="p1-turnscore"></span></h3>
-        <button onclick="rollDice()" type="button" name="button" id="p1-roll">Roll Dice</button>
-        <button onclick="rollDice()" type="button" name="button" id="p1-hold">Hold</button>
+        <button onclick="rollDice()" id="p1-roll">Roll Dice</button>
+        <button id="p1-hold">Hold</button>
       </div>
       <div class="col-sm-4" id="dice">
-        <div id="die1" class="dice"></div>
+        <div id="die1" class="dice">0</div>
       </div>
       <div class="col-sm-4"id="player2">
         <h2>Player 2 </h2>
         <h3>Total Score: <span id="p2-score"></span></h3>
         <h3>Turn Score: <span id="p2-turnscore"></span></h3>
-        <button onclick="rollDice()" type="button" name="button" id="p2-roll">Roll Dice</button>
-        <button onclick="rollDice()" type="button" name="button" id="p2-hold">Hold</button>
+        <button onclick="rollDice()" id="p2-roll">Roll Dice</button>
+        <button id="p2-hold">Hold</button>
       </div>
     </div>
   </body>
