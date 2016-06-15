@@ -1,4 +1,5 @@
 // Business End Logic
+
 function Player () {
   this.totalScore = 0;
   this.turnScore = 0;
@@ -28,6 +29,7 @@ $(document).ready(function() {
   event.preventDefault();
 
   var newPlayer1 = new Player ();
+  var newPlayer2 = new Player ();
 
   $("#p1-roll").click(function(event) {
     event.preventDefault();
@@ -42,13 +44,15 @@ $(document).ready(function() {
     $("#p1-turnscore").text(0);
   });
 
-
-  $("#p2-roll").click(function(event) {
+  $("#p2-roll").click(function(event){
     event.preventDefault();
+    newPlayer2.rollDice();
+    $("#p2-turnscore").text(newPlayer2.turnScore);
   });
-
-  $("#p2-hold").click(function(event) {
+  $("#p2-hold").click(function(event){
     event.preventDefault();
+    newPlayer2.hold();
+    $("#p2-score").text(newPlayer2.totalScore);
+    $("#p2-turnscore").text(0);
   });
-
 });
