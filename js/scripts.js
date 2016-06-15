@@ -33,15 +33,19 @@ $(document).ready(function() {
     newPlayer1.rollDice();
     $("#p1-turnscore").text(newPlayer1.turnScore);
   });
+
   $("#p1-hold").click(function(event) {
     event.preventDefault();
     newPlayer1.hold();
     $("#p1-score").text(newPlayer1.totalScore);
-    $("#p1-turnscore").hide();
+    $("#p1-turnscore").text(0);
   });
+
+
   $("#p2-roll").click(function(event) {
     event.preventDefault();
   });
+
   $("#p2-hold").click(function(event) {
     event.preventDefault();
   });
