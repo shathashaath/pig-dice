@@ -1,5 +1,6 @@
 body {
   font-family: serif;
+  color: #000000;
 }
 
 .container {
@@ -7,8 +8,9 @@ body {
   width: 150%;
 }
 
-h1 {
+.page-header {
   text-align: center;
+  font-size: 55pt;
 }
 
 #dice {
@@ -20,4 +22,9 @@ h1 {
   text-align: center;
   margin: 5px;
   margin-top: 50px;
+}
+
+.btn {
+  margin-top: 15px;
+  margin-left: 10px;
 }

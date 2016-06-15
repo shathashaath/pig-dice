@@ -9,24 +9,24 @@
   </head>
 
   <body>
-    <h1>Pig Dice!</h1>
+    <h1 class="page-header">Pig Dice!</h1>
     <div class="row container">
       <div class="col-sm-4" id="player1">
-        <h2>Player 1 </h2>
+        <h1>Player 1 </h1>
         <h3>Total Score: <span id="p1-score"></span></h3>
         <h3>Turn Score: <span id="p1-turnscore"></span></h3>
-        <button id="p1-roll">Roll Dice</button>
-        <button id="p1-hold">Hold</button>
+        <button type="button" class="btn btn-success" id="p1-roll">Roll Dice</button>
+        <button type="button" class="btn btn-danger" id="p1-hold">Hold</button>
       </div>
       <div class="col-sm-4" id="dice">
         <div id="dieBox" class="dice"></div>
       </div>
       <div class="col-sm-4"id="player2">
-        <h2>Player 2 </h2>
+        <h1>Player 2 </h1>
         <h3>Total Score: <span id="p2-score"></span></h3>
         <h3>Turn Score: <span id="p2-turnscore"></span></h3>
-        <button onclick="rollDice()" id="p2-roll">Roll Dice</button>
-        <button id="p2-hold">Hold</button>
+        <button type="button" class="btn btn-success" id="p2-roll">Roll Dice</button>
+        <button type="button" class="btn btn-danger" id="p2-hold">Hold</button>
       </div>
     </div>
   </body>
