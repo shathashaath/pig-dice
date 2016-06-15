@@ -8,9 +8,14 @@ body {
   width: 150%;
 }
 
+#content {
+  padding-top: 10%;
+}
+
 .page-header {
   text-align: center;
-  font-size: 55pt;
+  font-size: 65pt;
+  margin-bottom: 75px;
 }
 
 #dice {
