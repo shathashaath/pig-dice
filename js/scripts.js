@@ -1,5 +1,4 @@
 // Business End Logic
-
 function Player () {
   this.totalScore = 0;
   this.turnScore = 0;
